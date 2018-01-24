@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="progress.com.dbase.AndroidDangerousPermission.Dangerous_Permissions">
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/call"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:text="Call My Number 1"
+        android:onClick="downloadFile"
+        android:fontFamily="casual"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="OnClick" />
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/call2"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:text="Call My Number 2"
+        android:onClick="downloadFile"
+        android:fontFamily="casual"
+        tools:layout_editor_absoluteY="83dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="OnClick" />
+
+
+    <EditText
+        android:id="@+id/locationid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location of Flooding"
+        android:inputType="textCapWords"
+        android:textAllCaps="true" />
+
+    <CheckBox
+        android:id="@+id/armedbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationid"
+        android:layout_marginTop="16dp"
+        android:text="Casualties"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#ED3237"
+        android:id="@+id/sms"
+        android:text="Report"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#ffffff" />
+</LinearLayout>
