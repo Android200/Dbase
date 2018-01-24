@@ -31,6 +31,11 @@ public class ContentCollection {
         dataContents.setUrl("mbuntu-1_xof1md.jpg");
         contentsArrayList.add(dataContents);
 
+        dataContents = new Contents();
+        dataContents.setName("Wallpaper 5");
+        dataContents.setUrl("mbuntu-1_xof1md.jpg");
+        contentsArrayList.add(dataContents);
+
         return contentsArrayList;
     }
 }
