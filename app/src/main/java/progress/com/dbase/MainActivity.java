@@ -15,12 +15,13 @@ import progress.com.dbase.AndroidJson.AndroidJson;
 import progress.com.dbase.AndroidPHPLogin.Androidphp2;
 import progress.com.dbase.AndroidReaadingTextFile.ReadingTextFile;
 import progress.com.dbase.AndroidSQLITE.AndroidSQLITE;
+import progress.com.dbase.Dfirebase.FirebaseActivity;
 import progress.com.dbase.PicassoGalleryGrid.Picasso_Gallery;
 import progress.com.dbase.PicassoImageLoader.PicassoImage;
 
 public class MainActivity extends AppCompatActivity {
     String list[]={"Android JSon","Picasso Image Loader","Picasso Gallery","android PHP LOGIN",
-            "Downloading File","Dangerous Permission","Android Reading Text","Cloudinary Gallery","Complex SQlite"};
+            "Downloading File","Dangerous Permission","Android Reading Text","Cloudinary Gallery","Complex SQlite","Fire Base"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), Cloudinary.class));
                 }else if(position==8){
                     startActivity(new Intent(getApplicationContext(), AndroidSQLITE.class));
+                }else if(position==9){
+                    startActivity(new Intent(getApplicationContext(), FirebaseActivity.class));
                 }
             }
         });

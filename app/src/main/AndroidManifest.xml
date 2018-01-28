@@ -32,7 +32,10 @@
         <activity android:name=".AndroidDangerousPermission.Dangerous_Permissions" />
         <activity android:name=".AndroidReaadingTextFile.ReadingTextFile" />
         <activity android:name=".AndroidSQLITE.AndroidSQLITE" />
-        <activity android:name=".AndroidCloudinary.Cloudinary"></activity>
+        <activity android:name=".AndroidCloudinary.Cloudinary" />
+        <activity android:name=".Dfirebase.FirebaseActivity" />
+        <activity android:name=".Dfirebase.CustomFireBaseActivity" />
+        <activity android:name=".Dfirebase.CustomFireBaseDisplay"></activity>
     </application>
 
 </manifest>
