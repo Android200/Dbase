@@ -34,6 +34,7 @@ public class CustomFireBaseDisplay extends AppCompatActivity {
         myref.keepSynced(true);
         FirebaseRecyclerOptions<firemodelreceive> options = new FirebaseRecyclerOptions.Builder<firemodelreceive>().setQuery(myref,firemodelreceive.class).build();
         firebaserecyclerAdapter = new FirebaseRecyclerAdapter<firemodelreceive, BlogViewHolder>(options) {
+
             @Override
             protected void onBindViewHolder(BlogViewHolder viewholder, int position,firemodelreceive model) {
                 viewholder.setName(model.getName());
@@ -49,7 +50,6 @@ public class CustomFireBaseDisplay extends AppCompatActivity {
             }
         };
         recyclerView.setAdapter(firebaserecyclerAdapter);
-        firebaserecyclerAdapter.startListening();
     }
 
 
@@ -85,5 +85,15 @@ public class CustomFireBaseDisplay extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        firebaserecyclerAdapter.startListening();
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        firebaserecyclerAdapter.stopListening();
+    }
 }
